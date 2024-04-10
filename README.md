@@ -1,16 +1,15 @@
-# exercise
+To run this project you need to create config file that's under git ignore.
 
-A test exercise
+res/config/development.json
 
-## Getting Started
+content:
 
-This project is a starting point for a Flutter application.
+{
+"base_url": "https://catfact.ninja/"
+}
 
-A few resources to get you started if this is your first Flutter project:
+Then call code gen -> dart run build_runner build -d
+Then run or debug app within dev env -> flutter run -t lib/main_dev.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It is done to increase security of the project. All sensitive info is hidden. It moves to
+github secrets and puts into the config-file while running CI. So there's nothing stores in the code of the project. 
