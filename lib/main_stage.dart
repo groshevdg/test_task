@@ -7,7 +7,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Environment.initFromJson<EnvironmentConfig>(
-    environmentType: EnvironmentType.production,
+    environmentType: EnvironmentType.test,
     fromJson: EnvironmentConfig.fromJson,
   );
 

@@ -1,0 +1,5 @@
+{
+  "@@locale": "en",
+  "homeTitle": "Test task",
+  "homeFetchError": "An error occurred while fetching the data"
+}
